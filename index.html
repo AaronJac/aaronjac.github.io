@@ -5,7 +5,7 @@
   <style>
     #svg-element {
       width: 100%;
-      height: 100%;
+      height: 80vh;
     }
 
     .highlighted {
@@ -15,11 +15,42 @@
     .highlighted * {
       fill: blue !important;
     }
+
+    #button-container {
+      text-align: center;
+      padding: .5cm;
+    }
+
+    #speak {
+      width: 2cm;
+      height: 2cm;
+      border: 1px lightgray solid;
+      border-radius: 50%;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iNDY1LjI1NnB4IiBoZWlnaHQ9IjQ2NS4yNTZweCIgdmlld0JveD0iMCAwIDQ2NS4yNTYgNDY1LjI1NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDY1LjI1NiA0NjUuMjU2OyIKCSB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNODcuNzQyLDIwNC44NzljLTguNjY4LDAtMTUuNzAxLDcuMDM1LTE1LjcwMSwxNS43MDFjMCw4My4yNTIsNjMuNjgsMTUxLjg4MywxNDQuODg2LDE1OS44MDJ2NTMuNDcxaC04Ni45MTMKCQkJYy04LjY2NiwwLTE1LjcwMSw3LjAzMy0xNS43MDEsMTUuNzAxYzAsOC42NjQsNy4wMzUsMTUuNzAxLDE1LjcwMSwxNS43MDFoMTAyLjYxNGgxMDIuNjE3YzguNjU5LDAsMTUuNzAxLTcuMDM3LDE1LjcwMS0xNS43MDEKCQkJYzAtOC42NjgtNy4wNDItMTUuNzAxLTE1LjcwMS0xNS43MDFoLTg2LjkxOHYtNTMuNDcxYzgxLjIxMS03LjkxOSwxNDQuODg5LTc2LjU1LDE0NC44ODktMTU5LjgwMgoJCQljMC04LjY2Ni03LjAyOS0xNS43MDEtMTUuNzAxLTE1LjcwMWMtOC42NjQsMC0xNS43MDEsNy4wMzUtMTUuNzAxLDE1LjcwMWMwLDcxLjIzLTU3Ljk1NSwxMjkuMTg5LTEyOS4xODUsMTI5LjE4OQoJCQljLTcxLjIzNiwwLTEyOS4xODUtNTcuOTU5LTEyOS4xODUtMTI5LjE4OUMxMDMuNDQzLDIxMS45MTUsOTYuNDE2LDIwNC44NzksODcuNzQyLDIwNC44Nzl6Ii8+CgkJPHBhdGggZD0iTTIyMi4wMTQsMzI2LjA5OGgyMi42MjZjNDYuMDE0LDAsODMuMzExLTM3LjI5Nyw4My4zMTEtODMuMzA2SDEzOC43MDRDMTM4LjcwNCwyODguODAxLDE3Ni4wMDEsMzI2LjA5OCwyMjIuMDE0LDMyNi4wOTh6CgkJCSIvPgoJCTxwYXRoIGQ9Ik0yNDUuMTI1LDBoLTIyLjYzMmMtNDYuMDEzLDAtODMuMzEsMzcuMjk3LTgzLjMxLDgzLjMxaDE4OS4yNTNDMzI4LjQzNiwzNy4yOTcsMjkxLjEzLDAsMjQ1LjEyNSwweiIvPgoJCTxyZWN0IHg9IjEzOS4xODMiIHk9Ijk5Ljg1MSIgd2lkdGg9IjE4OC4yODYiIGhlaWdodD0iMzEuNCIvPgoJCTxyZWN0IHg9IjEzOS44NjQiIHk9IjE0Ni42NjIiIHdpZHRoPSIxODguMjg3IiBoZWlnaHQ9IjMxLjQiLz4KCQk8cmVjdCB4PSIxMzguNDg1IiB5PSIxOTUuMDY3IiB3aWR0aD0iMTg4LjI3OSIgaGVpZ2h0PSIzMS40Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==) no-repeat center center;
+      background-size: 1cm 1cm;
+      outline: none;
+    }
+
+    #speak:hover {
+      background-color: lightgray;
+    }
+
+    #speak:active {
+      background-color: gray;
+    }
+
+    #speak.speaking {
+      background-color: gray;
+      border: .1cm red solid;
+    }
   </style>
 </head>
 
 <body>
   <div id="svg-container"></div>
+  <div id="button-container">
+    <input id="speak" type="button" />
+  </div>
   <script>(function () { function r(e, n, t) { function o(i, f) { if (!n[i]) { if (!e[i]) { var c = "function" == typeof require && require; if (!f && c) return c(i, !0); if (u) return u(i, !0); var a = new Error("Cannot find module '" + i + "'"); throw a.code = "MODULE_NOT_FOUND", a } var p = n[i] = { exports: {} }; e[i][0].call(p.exports, function (r) { var n = e[i][1][r]; return o(n || r) }, p, p.exports, r, e, n, t) } return n[i].exports } for (var u = "function" == typeof require && require, i = 0; i < t.length; i++)o(t[i]); return o } return r })()({
       1: [function (require, module, exports) {
         "use strict";
@@ -3319,6 +3350,8 @@
         window['SpeechGrammarList'] = window['SpeechGrammarList'] || window['webkitSpeechGrammarList'];
         window['SpeechRecognitionEvent'] = window['SpeechRecognitionEvent'] || window['webkitSpeechRecognitionEvent'];
         const svgContainer = document.querySelector('#svg-container');
+        const buttonContainer = document.querySelector('#button-container');
+        const speak = document.querySelector('#speak');
         let countriesMap = {};
         let highlightedCountry = null;
         function findCountries(svgElement) {
@@ -3372,6 +3405,21 @@
                   window['highlightCountry'](countries_1.countryAliases[name]);
               }
             }
+          });
+          let isStarted = false;
+          speak.addEventListener('click', event => {
+            if (isStarted)
+              recognition.stop();
+            else
+              recognition.start();
+          });
+          recognition.addEventListener('start', event => {
+            isStarted = true;
+            speak.classList.add('speaking');
+          });
+          recognition.addEventListener('end', event => {
+            isStarted = false;
+            speak.classList.remove('speaking');
           });
           recognition.addEventListener('error', event => {
             console.error(event);
