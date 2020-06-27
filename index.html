@@ -3324,8 +3324,13 @@
         function findCountries(svgElement) {
           for (let i = 0; i < svgElement.children.length; i++) {
             const element = svgElement.children.item(i);
-            if (element.tagName.toLowerCase() == "title")
-              countriesMap[element.innerHTML.trim().toLowerCase()] = element.parentElement;
+            if (element.tagName.toLowerCase() == "title") {
+              let name = element.innerHTML.trim().toLowerCase();
+              if (name in countries_1.countryAliases) {
+                name = countries_1.countryAliases[name];
+              }
+              countriesMap[name] = element.parentElement;
+            }
             else
               findCountries(element);
           }
