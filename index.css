@@ -1,6 +1,6 @@
 #svg-element {
     width: 100%;
-    height: calc(80vh - 6.5em);
+    height: 80vh;
 }
 
 .highlighted {
